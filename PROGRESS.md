@@ -64,7 +64,7 @@
 ## Published
 
 - Public MIT-licensed source and Windows x64 prototype release published on
-  2026-09-23: https://github.com/Leterel/VaginaPlugin/releases/tag/v0.1.0.
+  2026-09-23: https://github.com/Leterel/project-03-vajayjay/releases/tag/v0.1.0.
 - Release binaries remain those validated on 2026-09-20; subsequent README and
   publication-status edits do not change the compiled code.
 

@@ -18,9 +18,9 @@ independent frequency bands animate simultaneously. There are no explicit visual
 
 ## Install on Windows
 
-Download [vajayjay 0.1.3 for Windows and Linux](https://github.com/Leterel/VaginaPlugin/releases/tag/v0.1.3).
+Download [vajayjay 0.1.3 for Windows and Linux](https://github.com/Leterel/project-03-vajayjay/releases/tag/v0.1.3).
 The Windows package is `vajayjay-0.1.3-win-x64.zip`. The existing
-[historical 0.1.1 download](https://github.com/Leterel/VaginaPlugin/releases/tag/v0.1.1)
+[historical 0.1.1 download](https://github.com/Leterel/project-03-vajayjay/releases/tag/v0.1.1)
 still has the old name and predates the new animation and editor scaling.
 
 1. Unzip the Windows x64 download.

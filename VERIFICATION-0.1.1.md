@@ -1,7 +1,7 @@
 # VaginaPlugin 0.1.1 verification
 
 Tested on Windows x64, 25 September 2026. Public MIT project:
-https://github.com/Leterel/VaginaPlugin
+https://github.com/Leterel/project-03-vajayjay
 
 ## Changes
 
