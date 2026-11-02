@@ -1,4 +1,4 @@
-# Building VaginaPlugin 0.1.1
+# Building Vagina 0.2.0
 
 ## Requirements
 
@@ -17,13 +17,13 @@ Run from the repository root in PowerShell:
 cmake -S . -B build -G "Visual Studio 18 2026" -A x64
 cmake --build build --config Release --target VaginaPlugin audio_tests meter_lifecycle editor_smoke visual_render --parallel
 ctest --test-dir build -C Release --output-on-failure
-& .\build\bin\Release\validator.exe .\build\VST3\Release\vajayjay.vst3
+& .\build\bin\Release\validator.exe .\build\VST3\Release\Vagina.vst3
 ```
 
 For Visual Studio 2022 use `-G "Visual Studio 17 2022"` in a new build directory.
 The MSVC runtime is statically linked consistently in the SDK and this plugin.
 
-**Artifact:** `build/VST3/Release/vajayjay.vst3/` — this is a bundle directory.
+**Artifact:** `build/VST3/Release/Vagina.vst3/` — this is a bundle directory.
 Do not distribute only its inner binary. Keep the folder structure.
 
 After successful tests, package the full bundle together with installation
@@ -33,7 +33,7 @@ instructions and required license notices:
 .\scripts\package-windows.ps1 -BuildDirectory .\build -OutputDirectory .\dist
 ```
 
-The script creates `VaginaPlugin-0.1.1-win-x64.zip` and its SHA-256 checksum.
+The script creates `Vagina-0.2.0-win-x64.zip` and its SHA-256 checksum.
 Each run uses a fresh temporary staging directory, so leftover files in the
 output directory cannot enter a release. The version is read from CMakeLists.txt.
 To verify repeated packaging, the bundle structure, required license files and

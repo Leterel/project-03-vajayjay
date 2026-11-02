@@ -1,7 +1,10 @@
-# vajayjay
+# Vagina
 
-Formerly VaginaPlugin. Version 0.1.3 uses the name **vajayjay** in the host,
-editor and packages. The repository URL and VST3 class IDs remain unchanged.
+The requested product rename is implemented on this feature branch as 0.2.0.
+Host/editor/package names now use **Vagina**. Technical CMake target, repository
+URL, parameter/state format and VST3 class IDs remain unchanged. See
+[VERIFICATION-0.2.0.md](VERIFICATION-0.2.0.md) for actual checks and limits.
+No new release or installation into a user DAW is performed automatically.
 
 **Five bands. Zero sound changes.** An abstract, open-source VST3 visualizer.
 
@@ -16,7 +19,7 @@ independent frequency bands animate simultaneously. There are no explicit visual
 | 2,000–6,000 Hz | Occasional white droplets above a higher threshold |
 | 6,000–20,000 Hz | Transparent outlined particles |
 
-## Install on Windows
+## Historical release: vajayjay 0.1.3
 
 Download [vajayjay 0.1.3 for Windows and Linux](https://github.com/Leterel/project-03-vajayjay/releases/tag/v0.1.3).
 The Windows package is `vajayjay-0.1.3-win-x64.zip`. The existing
@@ -89,3 +92,7 @@ it is not built, linked, or included in the binary package.
   is sample-rate dependent, and frequencies above Nyquist cannot be analyzed.
 - Stop detection in the custom editor requires the host to route standard VST3
   processor/controller messages. Generic host meter displays retain host behavior.
+
+## Entwicklung und Übergabe
+
+[AGENTS.md](AGENTS.md) bündelt den Einstieg für Entwickler und KI-Agenten; [TESTING.md](TESTING.md) nennt reproduzierbare Prüfungen und deren Grenzen. Der aktuelle Übergabestand steht in [HANDOFF.md](HANDOFF.md).

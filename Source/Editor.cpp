@@ -51,7 +51,7 @@ public:
     c->setDrawMode(kAntiAliasing);
     c->setFillColor(background); c->drawRect(getViewSize(),kDrawFilled);
     label(c,"LETEREL  /  EXPERIMENTAL AUDIO LAB",{30,18,670,43},11,muted);
-    label(c,"vajayjay",{28,44,700,97},36,text);
+    label(c,"Vagina",{28,44,700,97},36,text);
     label(c,"FIVE BANDS. ZERO SOUND CHANGES.",{30,100,690,125},12,muted);
     c->setFillColor({24,47,44,255}); c->drawRect({754,48,930,80},kDrawFilled);
     label(c,"AUDIO PASSTHROUGH",{763,50,921,78},11,mint,kCenterText);
@@ -66,7 +66,7 @@ public:
     c->setFrameColor(line); c->setLineWidth(1); c->drawLine({30,539},{930,539});
     dot(c,36,566,3,strongest>0.01?mint:muted);
     label(c,strongest>0.01?"LISTENING TO YOUR AUDIO":"WAITING FOR AUDIO",{48,551,490,580},11,strongest>0.01?mint:muted);
-    label(c,"VST3  /  0.1.3  /  ABSTRACT VISUALIZER",{500,551,930,580},10,muted,kRightText);
+    label(c,"VST3  /  0.2.0  /  ABSTRACT VISUALIZER",{500,551,930,580},10,muted,kRightText);
     setDirty(false);
   }
 private:

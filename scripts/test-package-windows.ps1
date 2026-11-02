@@ -2,7 +2,7 @@ param([string]$BuildDirectory = (Join-Path $PSScriptRoot '..\build'))
 $ErrorActionPreference = 'Stop'
 $testRoot = Join-Path $PSScriptRoot ('..\build-package-test-' + [guid]::NewGuid().ToString('N'))
 $output = Join-Path $testRoot 'output'
-$staleBundle = Join-Path $output 'vajayjay.vst3'
+$staleBundle = Join-Path $output 'Vagina.vst3'
 New-Item -ItemType Directory -Path $staleBundle -Force | Out-Null
 Set-Content -LiteralPath (Join-Path $staleBundle 'stale-sentinel.txt') -Value 'Must not enter a release.'
 try {
@@ -14,7 +14,7 @@ try {
         $zip = [System.IO.Compression.ZipFile]::OpenRead($archive[0].FullName)
         try {
             $entries = @($zip.Entries | ForEach-Object { $_.FullName.Replace('\', '/') })
-            foreach ($required in @('vajayjay.vst3/Contents/x86_64-win/vajayjay.vst3', 'vajayjay.vst3/Contents/Resources/moduleinfo.json', 'VERIFICATION-0.1.3.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md')) {
+            foreach ($required in @('Vagina.vst3/Contents/x86_64-win/Vagina.vst3', 'Vagina.vst3/Contents/Resources/moduleinfo.json', 'VERIFICATION-0.2.0.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md')) {
                 if ($required -notin $entries) { throw "Missing release entry: $required" }
             }
             if ($entries -match 'stale-sentinel|\.package-') { throw 'Stale or staging content leaked into archive.' }
